@@ -40,4 +40,15 @@ module.exports = defineConfig({
       }),
     ],
   },
+  css: {
+    loaderOptions: {
+      // 给 sass-loader 传递选项
+      sass: {},
+      scss: {},
+      // 给 less-loader 传递 Less.js 相关选项
+      less: {
+        globalVars: {},
+      },
+    },
+  },
 });
